@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    background: url("https://scontent.fadj1-1.fna.fbcdn.net/v/t39.30808-6/442440064_450652667548570_4440083584712202770_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=zvwWEIKRrRQQ7kNvgF1h4RY&_nc_ht=scontent.fadj1-1.fna&_nc_gid=ArV9B0rBe8n6x-ztoIxQlCE&oh=00_AYBuIHHgZ_SMvBqZA533rdtdR8r2nB4PzN4Cjg_0Nl3Q0g&oe=67009204");
+    background-size: cover; /* لتغطية الشاشة بالكامل */
+    background-position: center; /* لتحديد موقع الصورة */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+    height: 500px;
+    
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00000000;
+    padding: 15px 30px;
+    border-bottom: solid rgb(255, 255, 255) ;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s;
+    border-radius: 20px;
+    padding: 7px;
+    transition: 0.5s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+li{
+    font-size: 15px;
+}
+
+.gallery img {
+    width: 40%;
+    height: auto;
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+   
+    transition: opacity 1s, transform 0.5s;
+}
+.h1{
+    
+    margin-left: 50%;
+}
+
+.gallery img.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
+
+
+header {
+    background: #9000ff00;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    
+}
+
+.container {
+    
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.container p{
+    font-size: 20px;
+}
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section#about {
+    background-color: #fff;
+}
+
+section#services {
+    background-color: #ffffff;
+}
+
+section#services ul {
+    list-style: none;
+    padding: 0;
+    
+    
+}
+
+section#services ul li {
+    background: #ffffff;
+    border: #000000 solid 2px;
+    color: #000000;
+    padding: 20px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    border-radius: 20px;
+}
+.li{
+display: inline-block;
+    width: 130px;
+    height: 100px;
+}
+
+section#vision {
+    background-color: #fff;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    
+}
+
+
+.nav-links a:hover{
+background: #fff;
+color: #000000;
+}
+.ah:hover{
+    border: none;
+}
+.container a{
+    font-size: 0px;
+}
+.btn{
+margin-block-start: 300px;
+
+display: inline-block;
+background: #ffffff;
+border: #ffffff solid 2px;
+color: #000000;
+padding: 15px;
+border-radius: 40px;
+transition: 0.5s;
+width: 300px;
+font-size: 17px;
+}
+.btn:hover{
+    cursor: pointer;
+    background: #000000;
+    color: #ffffff;
+}
+.li{
+    transition: 0.5s;
+    
+}
+.ul{
+    
+}
+.li:hover{
+    transform: scale(1.1);
+    margin-inline-start: 40px;
+    cursor: pointer;
+        color: #fff;
+}
+/* استجابة للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #00000000;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .body{
+background: url("https://scontent.fadj1-1.fna.fbcdn.net/v/t39.30808-6/442440064_450652667548570_4440083584712202770_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=zvwWEIKRrRQQ7kNvgF1h4RY&_nc_ht=scontent.fadj1-1.fna&_nc_gid=ArV9B0rBe8n6x-ztoIxQlCE&oh=00_AYBuIHHgZ_SMvBqZA533rdtdR8r2nB4PzN4Cjg_0Nl3Q0g&oe=67009204");
+background-size:cover ;
+background-position: center; /* لتحديد موقع الصورة */
+background-repeat: no-repeat; 
+
+    }
+
+    
+.gallery img {
+    
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 0.5s;
+}
+.h1{
+    display: none;
+}
+h1{
+    display: block;
+    font-size: medium;
+}
+.ul{
+    display:block;
+}
+.btn{
+    text-align: center;
+    width: 200px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #00000000;
+        padding: 15px 30px;
+        border-bottom: none;
+    }
+    
+}
